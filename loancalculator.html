@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loanstyle.css" />
+    <script src="https://kit.fontawesome.com/2654d75875.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="hero">
+            <a href="swapportal.html"><img src="asset_loan/img/image 1.png" alt="" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#"></a>About us</li>
+                <li><a href="#"></a>Talk to analyst</li>
+                <li><a href="#"></a>Track request</li>
+                <li><a href="#"></a>Faq</li>
+            </ul>
+        </nav>
+
+        <section class="container">
+            <div class="risk">
+                <img src="asset_loan/img/black.jpg" alt="" />
+            </div>
+
+            <div id="frm">
+                <form action="#" method="post">
+                    <section class="head">
+                        <h2>Staff Loan Calculator</h2>
+                        <h5>How much can I get?</h5>
+                    </section>
+
+                    <section class="inp">
+                        <div>
+                          
+                            <input placeholder="Staff ID"  type="text" name="Staff ID" id="StaffID"/> 
+                           
+                        </div>
+
+                        <div>
+                            <input class="bvn" id="BVN" placeholder="Enter BVN" type="text" minlength="11" maxlength="11"/>
+                        </div>
+
+                        <h5 id="printname"></h5>
+
+                        <div>
+                            <input placeholder="Amount" type="text" name="Request Amount" id="amount"/>
+                        </div>
+                        
+                          <div class="wrapper">
+                        <div class="menu">
+                            <select class="mode" name="paymentmode" id="modee">
+                               <option value="payment" >Mode of payment</option>
+                               <option value="monthly" id="monthly">Monthly</option>
+                               <option id="bi" value="bi">Bi-annual</option>
+
+
+                            </select>
+                        </div>
+                        </div>
+                
+                         
+                          <div > 
+                            <select id="tenor"  name="tenor">
+                               <option value="#" >Duration</option>
+                               <option value="1">1 month</option>
+                               <option value="2">2 months</option>
+                               <option value="3">3 months</option>
+                               <option value="4">4 months</option>
+                               <option value="5">5 months</option>
+                               <option value="6">6 months</option>
+                               <option value="7">7 months</option>
+                               <option value="8">8 months</option>
+                               <option value="9">9 months</option>
+                               <option value="10">10 months</option>
+                               <option value="11">11 months</option>
+                               <option value="12">12 months</option>
+
+                            </select>
+                        </div>
+                        
+
+                        <div>
+                            <select  id="tenorr" name="tenorr">
+                               <option value="1" >Duration</option>
+                               <option value="2">6 months</option>
+                               <option value="3">12 months</option>
+                               <option value="4">18 months</option>
+                               <option value="5">24 months</option>
+                            </select>
+                        </div>
+
+                        
+                    </section>
+                    
+                    <button id="cli">Continue</button>
+                    <button value="submit" id="click">Continue</button>
+                </form>
+            </div>
+        </section>
+
+        <form action="#" method="post" id="frm2" class="display-none">
+            <section class="inpp">
+                <div class="labeltwo">
+                    <label for="">Existing Loan</label>
+                    <input type="text" name="loan" id="existing_obligation"/>
+                </div>
+
+                <div class="labeltwo">
+                    <label for="">Monthly Salary</label>
+                    <input id="salary"  type="text" minlength="11" maxlength="11"/>
+                </div>
+
+                <div class="par">
+                    <h4>Monthly Loan Payment: <span id="repayment"></span></h4>
+                </div>
+
+                <div class="parr">
+                    <h4>Debt Service Ratio: <span id="DSCR"></span></h4>
+                </div>
+
+                <div class="comment">
+                    <div id="check">
+                    <svg style="width: 20%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve" height="20%">
+                    <circle style="fill: #6dc180" cx="256" cy="256" r="256" />
+                    <path style="fill: #5ca15d" d="M256,0v512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/>
+                    <polygon style="fill: #f2f2f4" points="219.429,367.932 108.606,257.108 147.394,218.32 219.429,290.353 355.463,154.32 394.251,193.108 "/>
+                    <polygon style="fill: #dfdfe1" points="256,331.361 394.251,193.108 355.463,154.32 256,253.782 "/>
+                    </svg>
+                </div>
+
+                
+                <br />
+                <br />
+
+                <p id="comm"></p>
+
+                <div class="declined-comment">
+                    <div id="close">
+                        <svg style="width: 20%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" height="20%">
+                   <circle style="fill:#FF6643;" cx="256" cy="256" r="256"/>
+                   <path style="fill:#FF4F19;" d="M256,0v512c141.385,0,256-114.615,256-256S397.385,0,256,0z"/>
+                   <polygon style="fill:#F2F2F4;" points="365.904,184.885 327.115,146.096 256,217.211 184.885,146.096 146.096,184.885 217.211,256 
+                       146.096,327.115 184.885,365.904 256,294.789 327.115,365.904 365.904,327.115 294.789,256 "/>
+                   <polygon style="fill:#DFDFE1;" points="365.904,184.885 327.115,146.096 256,217.211 256,294.789 327.115,365.904 365.904,327.115 
+                       294.789,256 "/>
+                   
+                   </svg>
+                   
+                </div>
+
+                
+                <br />
+                <br />
+
+                <p id="second-comment"></p>
+                <p id="advice"></p>
+                
+            </section>
+            <button id="shop"><a href="https://www.altmall.ng/">Start Shopping </a> </button>
+        </form>
+
+        <script src="loanscriptss.js"></script>
+
+    </body>
+</html>

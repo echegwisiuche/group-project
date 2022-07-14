@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>DISPUTE LOG TRACKING PLATFORM</title>
+    <link rel="stylesheet" href="disputetrack.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+           <a href="disputelog.html"> <img src="asset_dispute/sterling-logo.png" alt="" height="50px" width="50px"></a>
+            <ul class="navbar-menu">
+            <li class="navbar-item">
+               <h1>DISPUTE LOG TRACKING PLATFORM</h1>
+            </li>
+            </ul>
+        <div>
+    </nav>
+
+
+    <div class="wrapper">
+        <h2>Dispute Request Tracking</h2>
+
+        <div class="form">
+          <div class="field-container">
+            <input class="field-input" id="guessField" name="inputName" type="text" placeholder=" ">
+            <label class="field-placeholder" for="inputName">Enter Dispute ID:</label>
+            <p id="trackreq"></p>
+        </div>
+    </div>
+
+    <div class="submit">
+        <button><a id="trc" href="disputetrack1.html">Track</a> </button>
+    </div>
+
+    <div class="fullwidth">       
+        <div class="container separator">
+          <h3>Dispute Update</h3>
+  
+          <ul class="progress-tracker progress-tracker--text progress-tracker--center">
+            <li class="progress-step">
+              <div class="progress-marker"></div>
+              <div class="progress-text">
+                <h4 class="progress-title">Complaint update 1</h4>
+                <!--Request Received-->
+                
+              </div>
+            </li>
+  
+            <li class="progress-step">
+              <div class="progress-marker"></div>
+              <div class="progress-text">
+                <h4 class="progress-title">Complaint update 2</h4>
+                <!--Review On-going-->
+                
+              </div>
+            </li>
+  
+            <li class="progress-step" aria-current="step">
+              <div class="progress-marker"></div>
+              <div class="progress-text">
+                <h4 class="progress-title">Complaint update 3</h4>
+               <!-- Review completed, awaiting FT process-->
+                
+                <!--Transaction Failed, fund was reversal immediately
+                    Customer not Debited
+                    Pending Third Party Bank Approval for refund-->
+              </div>
+            </li>
+  
+            <li class="progress-step">
+              <div class="progress-marker"></div>
+              <div class="progress-text">
+                <h4 class="progress-title">Complaint update 4</h4>
+               <!-- Fund Reverse successfully-->
+                
+              </div>
+            </li>
+  
+         <!--   <li class="progress-step">
+              <div class="progress-marker"></div>
+              <div class="progress-text">
+                <h4 class="progress-title">Step 5</h4>
+                Shorter summary text
+              </div>
+            </li>      -->
+          </ul>        
+        
+        </div>
+      </div>
+</div>
+
+<script src="disputetrack.js"></script>
+
+
+</body>
+</html>

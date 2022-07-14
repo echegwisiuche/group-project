@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  /* position: fixed; */
+  height: 90px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.hero img {
+  position: absolute;
+  width: 125px;
+  height: 62px;
+  left: 40px;
+  top: 20px;
+}
+.container {
+  display: flex;
+}
+
+.risk img {
+  width: 810px;
+  height: 85vh;
+}
+
+#frm {
+  width: 370px;
+  height: 470px;
+  right: 135px;
+  top: 146px;
+  background-color: #e5e2e2;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-left: 90px;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  color: black;
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+.inp {
+  padding: 30px;
+  margin-top: -50px;
+}
+
+.inpp {
+  padding: 30px;
+}
+.inp input {
+  width: 300px;
+  margin-top: 20px;
+  padding: 8px;
+}
+
+.inpp input {
+  width: 300px;
+  margin-top: 7px;
+  padding: 8px;
+}
+
+.mode {
+  width: 300px;
+  margin-top: 19px;
+  padding: 8px;
+}
+
+#tenor {
+  width: 300px;
+  margin-top: 19px;
+  padding: 8px;
+  display: none;
+}
+
+#tenorr {
+  width: 300px;
+  margin-top: 19px;
+  padding: 8px;
+  display: none;
+}
+
+.labeltwo {
+  margin-top: 20px;
+  font-weight: 20px;
+}
+
+.labeltwo label {
+  font-weight: bold;
+}
+
+.par {
+  margin-top: 20px;
+}
+.parr {
+  margin-top: 20px;
+}
+.head {
+  padding: 30px;
+}
+#cli {
+  background-color: rgb(190, 7, 14);
+  border: none;
+  padding: 8px;
+  width: 200px;
+  color: white;
+  border-radius: 20px;
+  font-size: larger;
+  margin-left: 75px;
+}
+
+#click {
+  background-color: rgb(190, 7, 14);
+  border: none;
+  padding: 8px;
+  width: 200px;
+  color: white;
+  border-radius: 20px;
+  font-size: larger;
+  margin-left: 75px;
+}
+
+#shop {
+  background-color: white;
+  border: 2px solid rgb(18, 17, 17);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: none; */
+  border-radius: 20px;
+  padding: 6px;
+  width: 300px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 23px;
+  display: none;
+  margin-top: -2px;
+  font-size: x-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#click {
+  display: none;
+}
+
+#check svg {
+  margin-left: 90px;
+  margin-top: 20px;
+  display: none;
+}
+
+#close svg {
+  margin-left: 95px;
+  margin-top: 8px;
+  display: none;
+}
+
+#comm {
+  color: green;
+}
+
+#frm2 {
+  width: 370px;
+  height: 510px;
+  right: 135px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-left: 850px;
+  margin-top: -552px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#comm {
+  color: black;
+}
+.display-none {
+  display: none;
+}
+
+#printname {
+  color: green;
+}
+
+#second-comment {
+  margin-top: -10px;
+}

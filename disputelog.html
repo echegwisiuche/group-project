@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispute Resolution Platform</title>
+    <link rel="stylesheet" href="disputestyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="swapportal.html"> <img src="asset_dispute/sterling-logo.png" alt="" height="50px" width="50px"></a>
+            
+            <ul class="navbar-menu">
+            <li class="navbar-item">
+               <h1>DISPUTE PLATFORM</h1>
+            </li>
+            </ul>
+            <ul class="navbar-menu">
+            <li class="navbar-item">
+             <a class= "trck" href="disputetrack0.html"> Track Dispute </a>
+             <p id="tracker"></p>
+            </li>
+            </ul>
+        <div>
+    </nav>
+    
+<section id="msgtable">
+<div>
+  <marquee class="scrollmsg">This is when your account is debited for a transaction without you or beneficiary receiving the intended value.</marquee>
+
+      <div class="message">
+      <p>Transaction Error Channel	Resolution Period (Days)</p>
+    </div>
+  <div class="table">
+  <table>
+    <tr>
+    <th>Transaction</th>
+    <th>Dispute Type</th>
+    <!--<th>Dispense Error Channel</th>-->
+    <th>Resolution</th>
+    </tr>
+    <tr>
+    <td>Local Transactions</td>
+    <td>Sterling Bank ATM</td>
+    <td>24 hours</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>One Bank App/Sterling Pro/USSD</td>
+    <td>12 - 24 hours</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>POS/Merchant Website</td>
+    <td>3 working days</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>Other Bank’s ATMs/POS/Merchant Website</td>
+    <td>3 - 5 working days</td>
+    </tr>
+    <tr>
+    <td>Foreign Transactions</td>
+    <td>International Terminals</td>
+    <td>45 working days</td>
+    </tr>
+    <tr>
+    <td>Erroneous Transfer</td>
+    <!--<td>This Transaction reversal depend on Third party feedback</td>-->
+    <td>Subject to availability of funds and beneficiary's consent</td>
+    <td></td>
+    </tr>
+    <tr>
+  </table>
+</div>
+</section>
+    <form action="#" id="fm">
+     
+    
+        <div>
+          <label for="account-number">Account Number: </label>
+          <!--<input id="accname" type="text" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" />-->
+         <!--<input id="accname" type="number" number="account-number"  required />-->
+         <input id="accname" type="number" number="account-number"  required maxlength=10
+         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+          <p id="accountname"></p> 
+        
+        </div>
+        
+        <div class="check">
+          <label for="dispute type">Mode of Transaction: </label>
+        </div>
+        
+      <div class="checks">
+        <li>
+        <label for="onepay">One Bank</label>
+        <input type="radio" name="e-product"
+        id="onebank" value="onebank">
+        </li>
+        <li>
+            <label for="sterlingpro">Sterling Pro</label>
+        <input type="radio" name="e-product"
+        id="sterlingpro" value="paypro">
+        </li>
+        <li>
+          <label for="contactText">USSD</label>
+        <input type="radio" name="e-product"
+        id="ussd" value="ussd" required>
+        </li>
+        <li>
+          <label for="pos">POS</label>
+          <input type="radio" name="e-product"
+          id="pos" value="pos">
+  
+        </li>
+        <li>
+          <label for="vervemaster">Verve-Master Card</label>
+          <input type="radio" name="e-product"
+          id="vervemaster" value="verve"> 
+        </li>
+        </ul>
+      </div>
+
+      <!--<div id="myDIV">
+        This is my DIV element.
+        </div>-->
+
+      <section id="hidecarddetails">
+          <div class="card">
+           <div class="cadd">
+          <label for="card-number">Card Number: </label>
+          <h6>Card related to Dispute only</h6>
+          <input type="number" placeholder="First six digit on your card" name="card-number" required maxlength=6
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+           </div>
+
+
+            <div class="cad">
+          <label for="card-number"> </label>
+          <input type="number" placeholder="Last four digit on your card" name="card-number" required maxlength=4
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </div>
+        </div>
+      </section>
+
+
+         
+        <div class="amount">
+         <label for="amount">Amount: </label>
+         <input id="input-price" type="number" placeholder="N" name="amount" required required maxlength=7
+         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </div>
+
+
+        <div class="mot">
+          <h4>Form of Dispute</h4>
+          <select name="" class="formof-dispute Formof-Dispute" required>
+            <option value="">Select</option>
+            <option value="billpayment">Bill Payment</option>
+            <option value="airtimerecharge">Airtime Recharge</option>
+            <option value="fundtransfer">Fund Transfer</option>
+            <option value="atm">ATM</option>
+            <option value="pos">POS</option>
+            <option value="webpayment">Web Payment</option>
+            <option value="nondispense">Non-Dispense of Cash</option>
+            <option value="partialdepense">Partial Dispense</option>
+            <option value="erroneoustrans">Erroneous Transfer</option>
+            <option value="others">Other</option>
+          </select>
+        <div>
+
+          <form action="/action_page.php">
+            <label for="birthday">Transaction Date:</label>
+            <input type="date" id="transdate" name="transdate" required/>
+          </form>
+        </div>
+      <td>
+        <div>
+          <label for="transaction-location">Transaction Location:</label>
+          <input id="location" type="text" name="transaction-location" required />
+        </div>
+     
+     <!--<div>
+          <label for="phone-number">Phone Number: </label>
+          <input type="number" name="phonen-umber" required maxlength=11
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </div> 
+
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email"/>
+        </div> -->
+
+      <div>
+        <h6>screenshot of debit alert message (optional)<h6>
+          <input type="file" class="myFile" name="filename">
+      </div>        
+      
+        
+      </form>
+      <div>
+          <button id="submit" type="submit" value="submit"> Submit</button>
+        </div>
+          <p id="submitmessage"></p>
+</div>
+     
+
+      <script src="disputescript.js"></script>
+</body>
+</html>
